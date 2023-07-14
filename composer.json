@@ -1,5 +1,6 @@
 {
     "name": "vyacheslavhava/dns-service",
+    "version": "1.0.0",
     "description": "This library should allow us to get all DNS records for the specified domain name.",
     "license": "MIT",
     "authors": [
