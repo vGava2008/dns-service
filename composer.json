@@ -1,0 +1,24 @@
+{
+    "name": "vyacheslavhava/dns-service",
+    "version": "1.0.0",
+    "description": "Your package description",
+    "authors": [
+        {
+            "name": "Vyacheslav Hava",
+            "email": "vyacheslavhava@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vyacheslavhava\\DnsService\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vyacheslavhava\\DnsService\\Tests\\Unit\\": "tests/Unit"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    }
+}
