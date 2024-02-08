@@ -6,7 +6,10 @@ use Illuminate\Support\ServiceProvider;
 
 class DnsServiceProvider extends ServiceProvider
 {
-    public function register()
+    /**
+     * @return void
+     */
+    public function register(): void
     {
         $this->app->bind(DnsServiceInterface::class, function($app){
             return new DnsService();

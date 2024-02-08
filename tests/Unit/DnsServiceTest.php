@@ -10,7 +10,7 @@ class DnsServiceTest extends TestCase
 {
     public function testGetDnsRecords()
     {
-        $dnsService = new DnsService();
+        $dnsService = app(DnsService::class);
         $domain = 'gmail.com';
         $records = $dnsService->getDnsRecords($domain);
 
@@ -22,7 +22,7 @@ class DnsServiceTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
 
-        $dnsService = new DnsService();
+        $dnsService = app(DnsService::class);
         $domain = 'com';
         $dnsService->getDnsRecords($domain);
     }
